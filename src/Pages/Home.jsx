@@ -4,7 +4,8 @@ export default function Home() {
   return (
     <>
       <div className="Home-container">
-        <h1>Home</h1>
+        <h1>Home </h1>
+
         <p>welcome to the Store</p>
 
         <button> {<Link to="/Products">Shop Now</Link>}</button>

@@ -1,8 +1,16 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  background-image: url("./home pic.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 800px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
 }
 
 .logo {
@@ -41,36 +49,76 @@
   color: #888;
 }
 
-img {
+/* img {
   max-height: 150px;
+} */
+
+.card-product > img {
+  max-height: 150px;
+  max-width: 100px;
+  border-radius: 25px;
+  background: rgb(119, 69, 7);
+  padding: 5px;
 }
 
-.Home-container {
+.card-product > img:hover {
+  background-color: aliceblue;
+  transition: all 500ms ease-in-out;
+  padding: 10px;
+}
+
+/* .Home-container {
   background-image: url("./shopping-cart.jpg");
   background-size: cover;
   width: 600px;
   height: 400px;
-}
+} */
 
 li {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   margin: 10px;
+
+  border-radius: 25px;
+}
+
+li:hover {
+  background-color: aliceblue;
+  transition: all 500ms ease-in-out;
+  padding: 7px;
 }
 
 ul {
   display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .card-product {
-  background-color: rgb(142, 144, 147);
+  background-color: #d8d40aa6;
   max-width: 150px;
+  padding: 20px;
+  margin: 10px;
+
+  border-radius: 25px;
+}
+
+.card-product:hover {
+  background-color: gold;
+  transition: all 500ms ease-in-out;
+  padding: 30px;
+
+  box-shadow: 5px 2px;
 }
 
 .All-products {
   display: flex;
   flex-wrap: wrap;
+
+  justify-content: center;
 }
 
 .SubAndPlus {
